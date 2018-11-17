@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/receiveToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Fight"
+            app:titleTextColor="@color/white">
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/allShit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:theme="@style/AppTheme"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/main_user_image"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/math" />
+
+                    <TextView
+                        android:id="@+id/main_user_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quick"
+                        android:gravity="center_horizontal"
+                        android:text="Jahangir"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:src="@drawable/ic_flash_on_yellow_24dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/second_user_image"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/second" />
+
+                    <TextView
+                        android:id="@+id/second_user_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quick"
+                        android:gravity="center_horizontal"
+                        android:text="Aybek"
+                        android:textSize="17dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/counting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/main_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/qbold"
+                        android:gravity="right"
+                        android:text="1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text=":" />
+
+                    <TextView
+                        android:id="@+id/second_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/qbold"
+                        android:gravity="left"
+                        android:text="0" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/titleOfThemeInChallenge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/qbold"
+                    android:gravity="center_horizontal"
+                    android:text="Geometria"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/finish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/qbold"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/green2"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/StartBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true">
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/green2"
+                android:clickable="true"
+                android:fontFamily="@font/qbold"
+                android:foreground="?android:selectableItemBackground"
+                android:text="Start Fight"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/switchRounds"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/countRounds"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/qbold"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Hi there"
+            android:textSize="40dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/switchChecks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/checkThiss"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/qbold"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Right"
+            android:textColor="@color/green2"
+            android:textSize="40dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/wholeTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/count1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/qbold"
+                        android:gravity="right"
+                        android:text="0"
+                        android:textSize="19dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/qbold"
+                        android:gravity="right"
+                        android:text=":"
+                        android:textSize="19dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/count2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/qbold"
+                            android:gravity="left"
+                            android:text="0"
+                            android:textSize="19dp" />
+
+                        <TextView
+                            android:id="@+id/time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/qbold"
+                            android:gravity="center_horizontal"
+                            android:text="10"
+                            android:textSize="19dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/questionTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/qbold"
+                        android:padding="10dp"
+                        android:text="Question"
+                        android:textSize="16dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorPrimaryDark"
+                            android:padding="3dp"></RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/quick"
+                            android:padding="10dp"
+                            android:text="code"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:id="@+id/radioGroups"
+                            style="@style/Quick"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/Quick">
+
+                            <RadioButton
+                                android:id="@+id/challengeButton1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:fontFamily="@font/quick"
+                                android:padding="5dp"
+                                android:textSize="16dp"
+                                android:theme="@style/RadioButtonStyle"
+                                android:visibility="gone" />
+
+                            <RadioButton
+                                android:id="@+id/challengeButton2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:fontFamily="@font/quick"
+                                android:padding="5dp"
+                                android:textSize="16dp"
+                                android:theme="@style/RadioButtonStyle"
+                                android:visibility="gone" />
+
+                            <RadioButton
+                                android:id="@+id/challengeButton3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:fontFamily="@font/quick"
+                                android:padding="5dp"
+                                android:textSize="16dp"
+                                android:theme="@style/RadioButtonStyle"
+                                android:visibility="gone" />
+
+                            <RadioButton
+                                android:id="@+id/challengeButton4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:fontFamily="@font/quick"
+                                android:padding="5dp"
+                                android:textSize="16dp"
+                                android:theme="@style/RadioButtonStyle"
+                                android:visibility="gone" />
+                        </RadioGroup>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            app:cardElevation="5dp"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:id="@+id/checkIt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:foreground="?android:selectableItemBackground"
+                                android:orientation="horizontal"
+                                android:padding="3dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_horizontal"
+                                    android:src="@drawable/ic_check" />
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:background="@color/white"
+                                    android:fontFamily="@font/qbold"
+                                    android:padding="10dp"
+                                    android:text="Answer"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </ScrollView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

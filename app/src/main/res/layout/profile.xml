@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:collapsedTitleTextAppearance="@style/Title2"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleGravity="center_horizontal"
+            app:expandedTitleMarginTop="110dp"
+            app:expandedTitleTextAppearance="@style/Title"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="true">
+
+            <LinearLayout
+                android:id="@+id/expandedImage"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:src="@drawable/ic_account_circle_black_24dp"/>
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbars"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/Think"
+                app:layout_collapseMode="pin"
+                android:backgroundTint="@color/white"
+                app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+                app:popupTheme="@style/MyDarkToolbarStyle"
+                app:subtitleTextColor="@color/white"
+                app:titleTextAppearance="@style/AppTheme2"
+                app:titleTextColor="@color/white" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:id="@+id/profileTabLayout"
+            android:background="@color/colorPrimary"
+            app:tabTextColor="@color/white"
+            app:tabIndicatorColor="@color/bronze"
+            app:tabIndicatorHeight="5dp"
+            app:tabIconTint="@color/white"
+            android:theme="@style/Think"
+            android:layout_height="wrap_content">
+
+        </android.support.design.widget.TabLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewProfilePager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </android.support.v4.view.ViewPager>
+
+</android.support.design.widget.CoordinatorLayout>

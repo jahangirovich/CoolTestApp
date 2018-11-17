@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/white"
+    tools:context=".ThirdFragment"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp"
+    app:cardElevation="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:id="@+id/post_image"
+                android:layout_height="40dp"
+                android:src="@drawable/math"/>
+            <TextView
+                android:id="@+id/post_text"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="Zhakhangir"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:fontFamily="@font/qbold"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp">
+            <TextView
+                android:id="@+id/post_title"
+                android:layout_width="match_parent"
+                android:text="Hi there"
+                android:paddingBottom="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/quick"
+                android:textSize="17dp"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/trashImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_delete_black_24dp"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/my_post">
+
+        </ImageView>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/swiper"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:padding="5dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="40dp"
+                                android:id="@+id/userCircle"
+                                android:layout_height="40dp"
+                                android:src="@drawable/math"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:id="@+id/userUseranme"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/qbold"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:padding="5dp"
+                                android:text="Zhakhangir"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:theme="@style/InputLayout2">
+
+                            <EditText
+                                android:id="@+id/edits"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/quick"
+                                android:hint="What is new ?"
+                                android:textColor="@color/colorPrimary"
+                                android:textColorHint="@color/colorPrimary" />
+                        </android.support.design.widget.TextInputLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/cardView"
+                                android:layout_width="wrap_content"
+                                android:foreground="?android:selectableItemBackground"
+                                android:clickable="true"
+                                app:cardBackgroundColor="@color/green2"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                app:cardUseCompatPadding="true"
+                                app:cardElevation="5dp">
+                                <TextView
+                                    android:textColor="@color/white"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="10dp"
+                                    android:paddingRight="15dp"
+                                    android:paddingLeft="15dp"
+                                    android:paddingBottom="10dp"
+                                    android:text="Share"
+                                    android:fontFamily="@font/qbold"/>
+                            </android.support.v7.widget.CardView>
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/addImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:foreground="?android:selectableItemBackground"
+                                android:clickable="true"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                app:cardUseCompatPadding="true">
+                                <ImageView
+                                    android:paddingTop="5dp"
+                                    android:paddingRight="10dp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingBottom="5dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_photo_camera_black_24dp"/>
+                            </android.support.v7.widget.CardView>
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageForUpload"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <Spinner
+                android:id="@+id/spinneR"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right">
+            </Spinner>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/showHome"
+                android:visibility="gone"
+                android:text="There is not post"
+                android:fontFamily="@font/quick"
+                android:gravity="center_horizontal"
+                android:padding="10dp"/>
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:id="@+id/postProgress"
+                android:layout_height="match_parent"
+                android:theme="@style/AppTheme"
+                />
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/post_recyclerView"
+                android:layout_marginTop="10dp">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

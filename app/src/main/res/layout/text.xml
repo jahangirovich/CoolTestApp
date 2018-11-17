@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme"
+    android:transitionName="layoutTransition">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/white">
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/qbold"
+                android:text="Theory" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+                    <ProgressBar
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textProgress"/>
+
+                    <TextView
+                        android:id="@+id/what"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quick"
+                        android:text="     Lorem Ipsum is simply dummy text of the printing and
+
+     typesetting industry. Lorem Ipsum has been the industry's standard
+
+    dummy text ever since the 1500s, when an unknown
+printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in
+
+the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                        android:textColor="@color/colorPrimary" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/qbold"
+                android:text="Notes" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray2"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/bronze"
+                        android:padding="10dp"></RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/notes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/qbold"
+                        android:padding="10dp"
+                        android:text="hi there"
+                        android:textSize="11dp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/quiz"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:background="@drawable/border"
+                android:clickable="true"
+                android:fontFamily="@font/qbold"
+                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                android:padding="5dp"
+                android:text="Next to quiz"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="@color/white"
+        android:orientation="vertical"
+
+        android:visibility="gone">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:elevation="2dp"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/qbold"
+                android:padding="10dp"
+                android:text="hi"
+                android:textSize="17dp" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:elevation="2dp"
+            app:cardUseCompatPadding="true">
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="10dp">
+
+                <RadioButton
+                    android:theme="@style/RadioButtonStyle"
+                    android:id="@+id/button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:fontFamily="@font/quick"
+
+                    android:padding="20dp" />
+
+                <RadioButton
+                    android:id="@+id/button2"
+                    android:theme="@style/RadioButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:fontFamily="@font/quick"
+                    android:padding="20dp" />
+
+                <RadioButton
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:textSize="16dp"
+                    android:theme="@style/RadioButtonStyle"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:fontFamily="@font/quick"
+                    android:padding="20dp" />
+
+                <RadioButton
+                    android:id="@+id/button4"
+                    android:layout_width="match_parent"
+                    android:textSize="16dp"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/RadioButtonStyle"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:fontFamily="@font/quick"
+                    android:padding="20dp" />
+            </RadioGroup>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:background="@color/green2"
+            android:clickable="true"
+            android:fontFamily="@font/qbold"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="5dp"
+            android:text="Answer"
+            android:textColor="@color/white" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"
+                app:cardUseCompatPadding="true"
+                android:id="@+id/card1"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:background="@color/green2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Right!"
+                    android:fontFamily="@font/qbold"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/white"/>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"
+                app:cardUseCompatPadding="true"
+                android:id="@+id/card2"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:gravity="center_horizontal"
+                    android:background="@color/cards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wrong!"
+                    android:fontFamily="@font/qbold"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/white"/>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

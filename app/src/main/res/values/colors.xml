@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4e535b</color>
+    <color name="colorPrimary2">#6b6f78</color>
+    <color name="colorPrimaryDark">#525964</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#b3b2b2</color>
+    <color name="gray2">#dbeceaea</color>
+    <color name="visible">#dbf1efef</color>
+    <color name="bronze">#fcc9a743</color>
+    <color name="bronze2">#fdf5f2d9</color>
+    <color name="greenGradient">#fd6a737b</color>
+    <color name="fiolet">#fdededed</color>
+    <color name="gold">#fdc1aa65</color>
+    <color name="golob">#fd6a8fae</color>
+    <color name="redGradient">#66dcc2c3</color>
+    <color name="whites">#80ffffff</color>
+    <color name="blue">#fc6f9db4</color>
+    <color name="lighter">#b94e535b</color>
+    <color name="green">#9fbf85</color>
+    <color name="green2">#a7cc89</color>
+    <color name="green3">#76a152</color>
+    <color name="cards">#df5d6c</color>
+    <color name="bronzovii">#E0D4D4</color>
+    <color name="grace">#dfdfdf</color>
+</resources>

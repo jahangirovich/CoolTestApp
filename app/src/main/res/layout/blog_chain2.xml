@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:transitionName="recyclerAnim"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    tools:context=".FirstFragment"
+    android:padding="10dp">
+    <RelativeLayout
+        android:layout_width="110dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_height="100dp"
+        android:background="@color/greenGradient"
+        android:id="@+id/relate">
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="hi"
+            android:id="@+id/firstText"
+            android:fontFamily="@font/qbold"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>

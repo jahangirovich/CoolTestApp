@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CoolTestApp</string>
+    <string name="category_usefulinfo">Icon</string>
+    <string name="category_places">Post</string>
+    <string name="category_food">Fight</string>
+    <string name="category_nature">Comments</string>
+    <string name="category_tutorial">Tutorial</string>
+    <string-array name="choose">
+        <item>All Post</item>
+        <item>My Post</item>
+    </string-array>
+</resources>
